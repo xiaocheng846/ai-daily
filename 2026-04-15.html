@@ -153,6 +153,58 @@
     text-decoration: underline;
   }
 
+  /* 分类导航 TOC */
+  .toc-block {
+    background: #12151f;
+    border-radius: 16px;
+    padding: 18px 24px;
+    margin-bottom: 16px;
+    border-left: 4px solid #4F8EF7;
+  }
+  .toc-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #9aa0ac;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+  .toc-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .toc-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #1a1d2b;
+    border-radius: 10px;
+    border: 1px solid #2a2e42;
+    border-bottom-width: 3px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    cursor: pointer;
+  }
+  .toc-item:hover {
+    background: #1f2235;
+    transform: translateY(-1px);
+  }
+  .toc-cat {
+    font-size: 13px;
+    font-weight: 500;
+    color: #d0d4dc;
+  }
+  .toc-num {
+    font-size: 12px;
+    font-weight: 700;
+    background: rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 1px 7px;
+    min-width: 22px;
+    text-align: center;
+  }
+
   /* Top3 */
   .top3-block {
     background: #12151f;
@@ -233,6 +285,30 @@
   </div>
 
 
+  <div class="toc-block">
+    <div class="toc-label">📋 分类导航</div>
+    <div class="toc-row">
+      <a class="toc-item" href="#模型动态" style="border-color:#4F8EF7">
+        <span class="toc-cat">🤖 模型动态</span>
+        <span class="toc-num" style="color:#4F8EF7">4</span>
+      </a>
+      <a class="toc-item" href="#开源工具" style="border-color:#00C896">
+        <span class="toc-cat">🛠️ 开源工具</span>
+        <span class="toc-num" style="color:#00C896">3</span>
+      </a>
+      <a class="toc-item" href="#研究前沿" style="border-color:#A78BFA">
+        <span class="toc-cat">🔬 研究前沿</span>
+        <span class="toc-num" style="color:#A78BFA">4</span>
+      </a>
+      <a class="toc-item" href="#大佬动态" style="border-color:#F7C948">
+        <span class="toc-cat">💬 大佬动态</span>
+        <span class="toc-num" style="color:#F7C948">3</span>
+      </a>
+    </div>
+  </div>
+
+
+
   <div class="top3-block">
     <div class="top3-label">⚡ 今日最热</div>
     <ol class="top3-list"><li>GPT-6 正式发布，性能提升 40%；Anthropic 年化收入 300 亿美元反超 OpenAI</li><li>Anthropic 与 Nature 合作发表论文：LLM 可通过隐性信号传递偏好和错误对齐</li><li>英伟达发布全球首个量子 AI 开源模型 Ising，股价连涨十日</li></ol>
@@ -240,7 +316,7 @@
 
 
 
-  <div class="section-header" style="border-left-color:#4F8EF7">
+  <div id="模型动态" class="section-header" style="border-left-color:#4F8EF7">
     <span class="section-title">🤖 模型动态</span>
     <span class="section-count">4 条</span>
   </div>
@@ -284,7 +360,7 @@
 
   </div>
 
-  <div class="section-header" style="border-left-color:#00C896">
+  <div id="开源工具" class="section-header" style="border-left-color:#00C896">
     <span class="section-title">🛠️ 开源工具</span>
     <span class="section-count">3 条</span>
   </div>
@@ -319,7 +395,7 @@
 
   </div>
 
-  <div class="section-header" style="border-left-color:#A78BFA">
+  <div id="研究前沿" class="section-header" style="border-left-color:#A78BFA">
     <span class="section-title">🔬 研究前沿</span>
     <span class="section-count">4 条</span>
   </div>
@@ -363,7 +439,7 @@
 
   </div>
 
-  <div class="section-header" style="border-left-color:#F7C948">
+  <div id="大佬动态" class="section-header" style="border-left-color:#F7C948">
     <span class="section-title">💬 大佬动态</span>
     <span class="section-count">3 条</span>
   </div>
@@ -405,7 +481,7 @@
   </div>
 
   <div class="footer">
-    由 OpenClaw 自动生成 · 2026-04-16 09:35 · 数据来源：Bing / 百度 / HuggingFace / GitHub
+    由 OpenClaw 自动生成 · 2026-04-16 09:52 · 数据来源：Bing / 百度 / HuggingFace / GitHub
   </div>
 
 </div>
